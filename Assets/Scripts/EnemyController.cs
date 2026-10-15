@@ -13,7 +13,10 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _rigidBody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        player = GetComponent<GameObject>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class EnemyController : MonoBehaviour
         Este método checkea si el jugador está a menor distancia de la de
         distanceFollow, en tal caso seguirá al jugador.
         */
+        
     }
 
     public void death()

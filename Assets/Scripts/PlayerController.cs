@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.XR;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,13 +10,17 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidBody;
     private Animator _animator;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
         /* Sabiendo la función de este método
         genere las instrucciones necesarias...
         */
-
+         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _rigidBody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();  
     }
 
     // Update is called once per frame
@@ -34,6 +39,7 @@ public class PlayerController : MonoBehaviour
         /* Genere el código para que el jugador se mueva...
         añada las animaciones pertinentes
         */
+        
         
     }    
     
